@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Play Lab</title>
+<meta name="description" content="Jogos de navegador em um só lugar.">
+<link rel="icon" id="favicon" href="data:,">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav"><div class="wrap nav-in">
+  <a class="logo" id="logo" href="#inicio" aria-label="Início"><span>Play</span><b>Lab</b></a>
+  <nav aria-label="Principal">
+    <a href="#inicio" data-sec="inicio" class="active">Início</a>
+    <a href="#jogos" data-sec="jogos">Jogos</a>
+    <a href="#sobre" data-sec="sobre">Sobre</a>
+    <a class="btn btn-primary btn-sm" id="playNow" href="#jogos">Jogar agora</a>
+  </nav>
+</div></header>
+<main>
+<section class="hero" id="inicio"><div class="shapes" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <h1 id="heroTitle"><span>Play</span> <b>Lab</b></h1>
+    <p>Jogos de navegador em um só lugar.</p>
+    <div class="actions"><a class="btn btn-primary" href="#jogos">Ver jogos</a><a class="btn btn-ghost" id="featBtn" href="#jogos">Jogo em destaque</a></div>
+  </div>
+</section>
+<section class="section" id="jogos"><div class="wrap">
+  <div class="sec-head"><div><span class="bar"></span><h2>Jogos</h2></div><a class="link-all" href="#jogos">Ver todos →</a></div>
+  <div class="grid" id="grid" aria-live="polite"><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div></div>
+</div></section>
+<section class="section about" id="sobre"><div class="wrap">
+  <div class="sec-head"><div><span class="bar"></span><h2>Sobre</h2></div></div>
+  <p id="aboutText"></p>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap"><span>© 2026 Play Lab — Desenvolvido por Rian Molinari</span><div class="socials" id="socials"></div></div></footer>
+<script src="js/config.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script><script src="js/api.js"></script><script src="js/site.js"></script>
+</body>
+</html>
